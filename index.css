@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Poppins-Regular.otf') format(opentype);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+#openModalBtn {
+    width: 70px;
+    height: 30px;
+    font-family: poppins;
+    border: 1px solid #286cef;
+    color: #286cef;
+    background-color: #286eef1e;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    outline: none;
+}
+
+#openModalBtn:hover {
+    background-color: #286cef;
+    color: #fefefe;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #00000013;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #ffffff;
+    padding: 15px 0px 15px 30px;
+    margin: 7% auto;
+    gap: 15px;
+    border-radius: 15px;
+    border: 1px solid #0000001a;
+    width: 23%;
+}
+
+.close {
+    color: #303030;   
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: poppins;
+    font-size: 17px;
+    color: #303030;
+}
+
+#addItemForm {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#addItemForm input {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #30303036;
+    background-color: #f8f8f8;
+    outline: none;
+    font-family: poppins;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#addItemForm label {
+    font-family: poppins;
+    font-size: 14px;
+}
+
+#addItemForm button {
+    width: 85px;
+    height: 30px;
+    border-radius: 8px;
+    font-family: poppins;
+    border: 1px solid #286cef;
+    background-color: #286eef1e;
+    color: #286cef;
+    cursor: pointer;
+}
+
+#itemsTable {
+    width: 55%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid #286cef;
+}
+
+#itemsTable th, #itemsTable td {
+    padding: 8px;
+    text-align: left;
+    font-family: poppins;
+    font-size: 13px;
+    color: #303030b0;
+}
+
+#itemsTable th {
+    background-color: #286cef;
+    font-family: poppins;
+    font-size: 13px;
+    color: #fefefe;
+    font-weight: 100;
+}
+
+.editBtn, .deleteBtn {
+    width: 55px;
+    height: 25px;
+    border: 1px solid #286cef;
+    color: #286cef;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    border-radius: 10px;
+}
